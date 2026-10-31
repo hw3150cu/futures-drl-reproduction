@@ -1,0 +1,41 @@
+# --- data: never commit market data -------------------------------------
+data_export/
+data/CLC/
+data/futures/
+data/futures_processed/
+config/TEMP/
+*.csv.gz
+*_RAD.CSV
+
+# --- generated artifacts -------------------------------------------------
+output_corrected_raw/
+robustness_stress_runs/
+*.xlsx
+
+# --- python --------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# --- os / editor ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- secrets -------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+
+# --- generated third-party series: rebuild with make_market_data.py -------
+data/index_data.csv
+data/risk_free_rate.csv
